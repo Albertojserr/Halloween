@@ -11,3 +11,21 @@ para resolver las actividades detalladas a continuación:
 •  mostrar toda la información de la nave más pequeña y la más grande.'''
 
 
+import csv
+
+fichero = open('vehicles.csv')
+#print(fichero.read())
+#print(fichero.readline())
+#print(fichero.readline())
+
+#lineas = fichero.readlines()
+#print(lineas)
+#['Contenido de la primera línea\n', 'Contenido de la segunda línea\n',
+#'Contenido de la tercera línea\n', 'Contenido de la cuarta línea']
+
+lineas = fichero.readlines()
+#for linea in lineas:
+#    print(linea)
+ordenados = sorted(lineas)
+for linea in lineas:
+    print(linea)
